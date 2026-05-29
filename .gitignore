@@ -4,6 +4,9 @@ __pycache__/
 .pytest_cache/
 *.zip
 data/raw/
-data/*.parquet
-data/*.csv
-data/*.zip
+# scan_results: block checkpoint/logs but allow output CSVs
+scan_results/scan_checkpoint.csv
+scan_results/scan_*.log
+# scan/: block compiled files but allow .py sources
+scan/__pycache__/
+scan/*.pyc
